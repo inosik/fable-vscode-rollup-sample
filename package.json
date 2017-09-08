@@ -4,6 +4,7 @@
   "description": "Example VS Code Extension with Fable",
   "version": "0.1.0",
   "publisher": "me",
+  "license": "Unlicense",
   "private": true,
   "main": "./out/extension",
   "engines": {
