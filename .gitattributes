@@ -1,0 +1,5 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+*.fs     diff=csharp
+*.fsx    diff=csharp

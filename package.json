@@ -1,0 +1,35 @@
+{
+  "name": "wordcount",
+  "displayName": "WordCount",
+  "description": "Example VS Code Extension with Fable",
+  "version": "0.1.0",
+  "publisher": "me",
+  "private": true,
+  "main": "./out/extension",
+  "engines": {
+    "vscode": "^1.5.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:markdown"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "build:watch": "rollup -c -w"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.26.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.0",
+    "fable-utils": "^1.0.2",
+    "rollup": "^0.49.2",
+    "rollup-plugin-commonjs": "^8.2.0",
+    "rollup-plugin-fable": "^1.1.0",
+    "rollup-plugin-node-resolve": "^3.0.0"
+  }
+}
