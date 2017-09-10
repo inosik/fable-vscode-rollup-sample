@@ -591,13 +591,9 @@ extglob@^0.3.1:
   dependencies:
     is-extglob "^1.0.0"
 
-fable-utils@^1.0.1:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/fable-utils/-/fable-utils-1.0.2.tgz#3f687ef9c573c4be915396d6656a6888aa92c259"
-
-fable-utils@^1.0.2:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/fable-utils/-/fable-utils-1.0.4.tgz#3361d044e199d73dc10d5eec7cf6ac7b318c9d13"
+fable-utils@^1.0.2, fable-utils@^1.0.4:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/fable-utils/-/fable-utils-1.0.6.tgz#df4af260a2948b7562e3cbcfa044a3482b5c0573"
 
 filename-regex@^2.0.0:
   version "2.0.1"
@@ -956,10 +952,10 @@ rollup-plugin-commonjs@^8.2.0:
     rollup-pluginutils "^2.0.1"
 
 rollup-plugin-fable@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-fable/-/rollup-plugin-fable-1.1.0.tgz#3946eba62b10838f55b547cea42f230467b9338d"
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-fable/-/rollup-plugin-fable-1.1.1.tgz#22dc14212b67dede148f1983dde0a5a139cdbfbe"
   dependencies:
-    fable-utils "^1.0.1"
+    fable-utils "^1.0.4"
     rollup-pluginutils "2.0.1"
 
 rollup-plugin-node-resolve@^3.0.0:
