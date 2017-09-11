@@ -7,10 +7,15 @@
 // ${cwd}: the current working directory of the spawned process
 
 {
-    "version": "0.1.0",
-    "command": "yarn",
-    "args": ["run", "build"],
-    "isShellCommand": true,
-    "isBuildCommand": true,
-    "showOutput": "always"
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build extension",
+            "type": "npm",
+            "script": "build",
+            "presentation": {
+                "reveal": "silent"
+            }
+        }
+    ]
 }
