@@ -1,7 +1,7 @@
 import nodeResolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
 import fable from 'rollup-plugin-fable';
-import fableUtils from 'fable-utils'
+import fableUtils from 'fable-utils';
 import path from 'path';
 import pkg from './package.json';
 
