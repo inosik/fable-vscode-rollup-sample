@@ -3,13 +3,10 @@ import commonjs from 'rollup-plugin-commonjs';
 import fable from 'rollup-plugin-fable';
 import fableUtils from 'fable-utils';
 import path from 'path';
-import pkg from './package.json';
 
 function find(filePath) {
   return path.resolve(__dirname, filePath);
 }
-
-var deps = pkg.dependencies || {};
 
 const fableOpts = {
   babel: fableUtils.resolveBabelOptions({
@@ -26,9 +23,7 @@ export default {
   },
   sourcemap: true,
   external: [
-    'vscode',
-    // We don't want to bundle our dependencies, if we had any
-    ...Object.keys(deps)
+    'vscode'
   ],
   plugins: [
     nodeResolve({
