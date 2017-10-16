@@ -3,3 +3,4 @@ node_modules/
 bin/
 obj/
 paket-files/
+.paket/Paket.Restore.targets
