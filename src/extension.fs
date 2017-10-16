@@ -8,7 +8,7 @@ open Fable.Import.vscode
 [<Emit("$0.match(/\w+/g)")>]
 let wordsIn (str : string) : obj = jsNative
 
-let formatCount : int -> string = importMember "./formatter"
+let formatCount (n : int) : string = importMember "./formatter"
 
 let activate (context : ExtensionContext) =
   let sb = window.createStatusBarItem StatusBarAlignment.Left
