@@ -1,6 +1,6 @@
 # Example VS Code Extension with Fable
 
-This is the [Word Count example][example] build with [Fable][fable-home]. It's cloned from [acormier/vscode-fable-sample][upstream] and modified to work with the .NET Core 2 SDK, Rollup instead of Webpack, Paket instead of NuGet and Fable v1.2.0, which allows us to omit the `packages/` directory.
+This is the [Word Count example][example] build with [Fable][fable-home]. It's cloned from [acormier/vscode-fable-sample][upstream] and modified to work with the .NET Core 2 SDK, Rollup instead of Webpack, Paket instead of NuGet and Fable >= 1.2.0, which allows us to omit the `packages/` directory.
 
   [example]: https://code.visualstudio.com/docs/extensions/example-word-count
   [fable-home]: http://fable.io/
