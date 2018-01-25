@@ -19,9 +19,9 @@ export default {
   input: './src/wordcount.fsproj',
   output: {
     file: './out/extension.js',
-    format: 'cjs'
+    format: 'cjs',
+    sourcemap: true
   },
-  sourcemap: true,
   external: [
     'vscode'
   ],
