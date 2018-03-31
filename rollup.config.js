@@ -29,7 +29,9 @@ export default {
     nodeResolve({
       jsnext: true,
       main: true,
-      moduleDirectory: find('./node_modules/')
+      customResolveOptions: {
+        paths: [find('./node_modules/')]
+      }
     }),
     commonjs(),
     fable(fableOpts)
