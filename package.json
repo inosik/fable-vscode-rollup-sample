@@ -30,7 +30,7 @@
     "fable-utils": "^1.0.2",
     "rollup": "^0.65.2",
     "rollup-plugin-commonjs": "^9.1.3",
-    "rollup-plugin-fable": "^1.1.0",
+    "rollup-plugin-fable": "^2.0.0-beta-001",
     "rollup-plugin-node-resolve": "^3.3.0"
   }
 }

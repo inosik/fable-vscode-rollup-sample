@@ -1,7 +1,6 @@
 import nodeResolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
 import fable from 'rollup-plugin-fable';
-import fableUtils from 'fable-utils';
 import path from 'path';
 
 function find(filePath) {
@@ -9,10 +8,10 @@ function find(filePath) {
 }
 
 const fableOpts = {
-  babel: fableUtils.resolveBabelOptions({
+  babel: {
     presets: [['es2015', {'modules': false}]],
     plugins: ['transform-runtime']
-  })
+  }
 };
 
 export default {
