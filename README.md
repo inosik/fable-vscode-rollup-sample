@@ -14,7 +14,7 @@ Run the following commands:
 - `.paket/paket.exe restore`
 - `cd src/`
 - `dotnet restore`
-- `dotnet fable start`
+- `dotnet fable start --port 61225`
 
 Now you can open VS Code and hit <kbd>F5</kbd> to start another instance of VS Code, which will have this extension loaded and the debugger attached to it. When starting the "Launch Extension" configuration, VS Code will run the `build` NPM script, which will transpile and bundle the source code and write the resulting JavaScript code to the `out/` directory.
 
