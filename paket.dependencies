@@ -2,7 +2,7 @@ source https://nuget.org/api/v2
 storage: none
 
 nuget FSharp.Core
-nuget Fable.Core prerelease
-clitool dotnet-fable prerelease
+nuget Fable.Core
+clitool dotnet-fable
 
 nuget Fable.Import.VSCode
