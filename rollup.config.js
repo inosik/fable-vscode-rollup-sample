@@ -9,8 +9,8 @@ function find(filePath) {
 
 const fableOpts = {
   babel: {
-    presets: [['es2015', {'modules': false}]],
-    plugins: ['transform-runtime']
+    presets: [['@babel/preset-env', {'modules': false}]],
+    plugins: ['@babel/plugin-transform-runtime']
   }
 };
 
