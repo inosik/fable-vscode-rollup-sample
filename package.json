@@ -21,17 +21,17 @@
     "build:watch": "rollup -c -w"
   },
   "dependencies": {
-    "@babel/runtime": "^7.1.2"
+    "@babel/runtime": "^7.2.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.1.2",
-    "@babel/plugin-transform-runtime": "^7.1.0",
-    "@babel/preset-env": "^7.1.0",
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.2.3",
     "fable-compiler": "^2.1.8",
     "fable-utils": "^1.0.2",
-    "rollup": "^0.66.4",
-    "rollup-plugin-commonjs": "^9.1.8",
+    "rollup": "^1.0.0",
+    "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-fable": "^2.0.0",
-    "rollup-plugin-node-resolve": "^3.3.0"
+    "rollup-plugin-node-resolve": "^4.0.0"
   }
 }
