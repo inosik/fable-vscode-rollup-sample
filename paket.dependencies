@@ -3,6 +3,5 @@ storage: none
 
 nuget FSharp.Core
 nuget Fable.Core
-clitool dotnet-fable
 
 nuget Fable.Import.VSCode
