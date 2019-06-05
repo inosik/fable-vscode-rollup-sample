@@ -25,7 +25,7 @@ export default {
     'vscode'
   ],
   plugins: [
-    nodeResolve({ jsnext: true }),
+    nodeResolve(),
     commonjs(),
     fable(fableOpts)
   ]
