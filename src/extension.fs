@@ -15,7 +15,9 @@ let activate (context : ExtensionContext) =
 
   let wordCount (d : TextDocument) =
     match wordsIn (d.getText ()) with
-    | null -> 0
+    // Don't match with `null` because that generates
+    // more code
+    | m when isNull m -> 0
     | m -> unbox m?length
 
   let showIfMdElseHide () =
