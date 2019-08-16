@@ -1,5 +1,6 @@
 out/
 node_modules/
+.ionide/
 bin/
 obj/
 paket-files/
