@@ -1,7 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
+
   <ItemGroup>
     <Compile Include="..\paket-files\ionide\ionide-vscode-helpers\src\Fable.Import.VSCode.fs">
       <Paket>True</Paket>
@@ -9,5 +11,7 @@
     </Compile>
     <Compile Include="extension.fs" />
   </ItemGroup>
+
   <Import Project="..\.paket\Paket.Restore.targets" />
+
 </Project>
