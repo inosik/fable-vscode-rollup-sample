@@ -22,14 +22,14 @@ let activate (context : ExtensionContext) =
 
   let showIfMdElseHide () =
     match window.activeTextEditor with
-    | Some e ->
+    | e when isNullOrUndefined e -> sb.hide ()
+    | e ->
       let d = e.document
       if d.languageId = "markdown" then
         sb.text <- d |> wordCount |> formatCount
         sb.show ()
       else
         sb.hide ()
-    | _ -> sb.hide ()
 
   showIfMdElseHide ()
 

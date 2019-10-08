@@ -4,4 +4,4 @@ storage: none
 nuget FSharp.Core
 nuget Fable.Core
 
-nuget Fable.Import.VSCode
+github ionide/ionide-vscode-helpers src/Fable.Import.VSCode.fs
