@@ -1,6 +1,6 @@
 # Example VS Code Extension with Fable
 
-This is the [Word Count example][example] build with [Fable][fable-home]. It was cloned from [acormier/vscode-fable-sample][upstream] and modified to work with the .NET Core 2 SDK, Rollup instead of Webpack, Paket instead of NuGet and Fable 2.
+This is the [Word Count example][example] build with [Fable][fable-home]. It was cloned from [acormier/vscode-fable-sample][upstream] and modified to work with the .NET SDK 3 and later, Rollup instead of Webpack and Fable 3.
 
   [example]: https://code.visualstudio.com/docs/extensions/example-word-count
   [fable-home]: http://fable.io/
@@ -10,12 +10,14 @@ This is the [Word Count example][example] build with [Fable][fable-home]. It was
 
 Run the following commands:
 
-- `yarn install`
-- `.paket/paket.exe restore`
-- `dotnet restore`
-- `dotnet node_modules/fable-compiler/bin/fable-cli/Fable.Cli.dll start --port 61225`
+``` shell
+# Restore .NET tools
+dotnet tool restore
+# Restore JavaScript packages
+npm install
+```
 
-Now you can open VS Code and hit <kbd>F5</kbd> to start another instance of VS Code, which will have this extension loaded and the debugger attached to it. When starting the "Launch Extension" configuration, VS Code will run the `build` NPM script, which will transpile and bundle the source code and write the resulting JavaScript code to the `out/` directory.
+Now, open VS Code and hit <kbd>F5</kbd> to start another instance of VS Code. This experimental instance will have the extension loaded and the debugger attached to it. When starting the "Launch Extension" configuration, VS Code will run the `build` NPM script, which will transpile and bundle the source code and write the resulting JavaScript code to the `out/` directory.
 
 ## TODO
 

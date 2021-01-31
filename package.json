@@ -17,21 +17,12 @@
     "onLanguage:markdown"
   ],
   "scripts": {
-    "build": "rollup -c",
+    "build": "dotnet fable src/ --run npx rollup -c",
     "build:watch": "rollup -c -w"
   },
   "dependencies": {
-    "@babel/runtime": "^7.6.2"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.6.2",
-    "@babel/plugin-transform-runtime": "^7.6.2",
-    "@babel/preset-env": "^7.6.2",
-    "fable-compiler": "^2.4.5",
-    "fable-utils": "^1.0.2",
-    "rollup": "^1.23.1",
-    "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-fable": "^2.0.0",
-    "rollup-plugin-node-resolve": "^5.2.0"
+    "@rollup/plugin-commonjs": "^17.1.0",
+    "@rollup/plugin-node-resolve": "^11.1.1",
+    "rollup": "^2.38.2"
   }
 }

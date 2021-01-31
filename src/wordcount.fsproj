@@ -5,13 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="..\paket-files\ionide\ionide-vscode-helpers\src\Fable.Import.VSCode.fs">
-      <Paket>True</Paket>
-      <Link>paket-files/Fable.Import.VSCode.fs</Link>
-    </Compile>
+    <Compile Include="Fable.Import.VSCode.fs" />
     <Compile Include="extension.fs" />
   </ItemGroup>
 
-  <Import Project="..\.paket\Paket.Restore.targets" />
+  <ItemGroup>
+    <PackageReference Include="Fable.Core" Version="3.2.3" />
+    <PackageReference Include="Fable.Node" Version="1.2.0" />
+  </ItemGroup>
 
 </Project>
