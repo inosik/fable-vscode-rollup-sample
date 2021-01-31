@@ -6,6 +6,10 @@ This is the [Word Count example][example] build with [Fable][fable-home]. It was
   [fable-home]: http://fable.io/
   [upstream]: https://github.com/acormier/vscode-fable-sample
 
+## For Extension Authors
+
+**Remember to update `package.json` and things like the license according to your needs.**
+
 ## Getting Started
 
 Run the following commands:
