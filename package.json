@@ -18,7 +18,7 @@
   ],
   "scripts": {
     "build": "dotnet fable src/ --run npx rollup -c",
-    "build:watch": "rollup -c -w"
+    "dev": "dotnet fable watch src/ --run npx rollup -c -w"
   },
   "dependencies": {
     "@rollup/plugin-commonjs": "^17.1.0",
