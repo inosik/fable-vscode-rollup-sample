@@ -16,6 +16,15 @@
             "presentation": {
                 "reveal": "silent"
             }
+        },
+        {
+            "label": "Build extension in watch mode",
+            "type": "npm",
+            "script": "dev",
+            "isBackground": true,
+            "presentation": {
+                "reveal": "silent"
+            }
         }
     ]
 }

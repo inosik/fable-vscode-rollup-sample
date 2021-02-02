@@ -12,6 +12,16 @@
             "stopOnEntry": false,
             "sourceMaps": true,
             "outFiles": [ "${workspaceRoot}/out/**/*.js" ]
+        },
+        {
+            "type": "extensionHost",
+            "request": "launch",
+            "name": "Launch extension without build",
+            "runtimeExecutable": "${execPath}",
+            "args": ["--extensionDevelopmentPath=${workspaceRoot}" ],
+            "stopOnEntry": false,
+            "sourceMaps": true,
+            "outFiles": [ "${workspaceRoot}/out/**/*.js" ]
         }
     ]
 }
