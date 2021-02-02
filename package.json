@@ -17,8 +17,8 @@
     "onLanguage:markdown"
   ],
   "scripts": {
-    "build": "dotnet fable src/ --run npx rollup -c",
-    "dev": "dotnet fable watch src/ --run npx rollup -c -w"
+    "build": "dotnet fable src/ --run rollup -c",
+    "dev": "dotnet fable watch src/ --run rollup -c -w"
   },
   "dependencies": {
     "@rollup/plugin-commonjs": "^17.1.0",
