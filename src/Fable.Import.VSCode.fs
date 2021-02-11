@@ -887,9 +887,14 @@ module vscode =
     let [<Import("version","vscode")>] version: string = failwith "JS only"
 
     type [<Import("commands","vscode")>] commands =
-        static member registerCommand(command: string, callback: (obj -> obj), ?thisArg: obj): Disposable = failwith "JS only"
-        static member registerCommand(command: string, callback: (obj -> obj -> obj), ?thisArg: obj): Disposable = failwith "JS only"
-        static member registerCommand(command: string, callback: (obj -> obj -> obj -> obj), ?thisArg: obj): Disposable = failwith "JS only"
+        static member registerCommand(command: string, callback: Func<'arg, 'result>, ?thisArg: obj): Disposable = failwith "JS only"
+        static member registerCommand(command: string, callback: Func<'arg1, 'arg2, 'result>, ?thisArg: obj): Disposable = failwith "JS only"
+        static member registerCommand(command: string, callback: Func<'arg1, 'arg2, 'arg3, 'result>, ?thisArg: obj): Disposable = failwith "JS only"
+        static member registerCommand(command: string, callback: Func<'arg1, 'arg2, 'arg3, 'arg4, 'result>, ?thisArg: obj): Disposable = failwith "JS only"
+        static member registerCommand(command: string, callback: Func<'arg1, 'arg2, 'arg3, 'arg4, 'arg5, 'result>, ?thisArg: obj): Disposable = failwith "JS only"
+        static member registerCommand(command: string, callback: Func<'arg1, 'arg2, 'arg3, 'arg4, 'arg5, 'arg6, 'result>, ?thisArg: obj): Disposable = failwith "JS only"
+        static member registerCommand(command: string, callback: Func<'arg1, 'arg2, 'arg3, 'arg4, 'arg5, 'arg6, 'arg7, 'result>, ?thisArg: obj): Disposable = failwith "JS only"
+        static member registerCommand(command: string, callback: Func<'arg1, 'arg2, 'arg3, 'arg4, 'arg5, 'arg6, 'arg7, 'arg8, 'result>, ?thisArg: obj): Disposable = failwith "JS only"
         static member registerTextEditorCommand(command: string, callback: (TextEditor -> TextEditorEdit -> unit), ?thisArg: obj): Disposable = failwith "JS only"
         static member executeCommand(command: string, [<ParamArray>] rest: obj[]): Promise<'T> = failwith "JS only"
         static member getCommands(?filterInternal: bool): Promise<ResizeArray<string>> = failwith "JS only"
